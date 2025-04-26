@@ -81,27 +81,27 @@ export const blogPosts: BlogPost[] = [
       <p>Tailwind's utility-first approach allows you to build complex components without ever leaving your HTML. This approach may seem verbose at first, but it offers unmatched flexibility and speed in development.</p>
       
       <pre><code>
-      <!-- Before: Custom CSS -->
-      <div class="chat-notification">
-        <div class="chat-notification-logo-wrapper">
-          <img class="chat-notification-logo" src="/img/logo.svg" alt="ChitChat Logo">
-        </div>
-        <div class="chat-notification-content">
-          <h4 class="chat-notification-title">ChitChat</h4>
-          <p class="chat-notification-message">You have a new message!</p>
-        </div>
-      </div>
+      &lt;!-- Before: Custom CSS --&gt;
+      &lt;div class="chat-notification"&gt;
+        &lt;div class="chat-notification-logo-wrapper"&gt;
+          &lt;img class="chat-notification-logo" src="/img/logo.svg" alt="ChitChat Logo"&gt;
+        &lt;/div&gt;
+        &lt;div class="chat-notification-content"&gt;
+          &lt;h4 class="chat-notification-title"&gt;ChitChat&lt;/h4&gt;
+          &lt;p class="chat-notification-message"&gt;You have a new message!&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- After: With Tailwind -->
-      <div class="p-4 bg-white rounded-lg shadow-md flex items-center">
-        <div class="flex-shrink-0">
-          <img class="h-10 w-10" src="/img/logo.svg" alt="ChitChat Logo">
-        </div>
-        <div class="ml-4">
-          <h4 class="text-lg font-semibold">ChitChat</h4>
-          <p class="text-gray-600">You have a new message!</p>
-        </div>
-      </div>
+      &lt;!-- After: With Tailwind --&gt;
+      &lt;div class="p-4 bg-white rounded-lg shadow-md flex items-center"&gt;
+        &lt;div class="flex-shrink-0"&gt;
+          &lt;img class="h-10 w-10" src="/img/logo.svg" alt="ChitChat Logo"&gt;
+        &lt;/div&gt;
+        &lt;div class="ml-4"&gt;
+          &lt;h4 class="text-lg font-semibold"&gt;ChitChat&lt;/h4&gt;
+          &lt;p class="text-gray-600"&gt;You have a new message!&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
       </code></pre>
       
       <h2>Configuration and Customization</h2>
@@ -153,8 +153,8 @@ export const blogPosts: BlogPost[] = [
         role: "admin" | "user" | "guest";
       };
 
-      function getUser(id: number): Promise<User> {
-        return fetch(`/api/users/${id}`)
+      function getUser(id: number): Promise&lt;User&gt; {
+        return fetch(\`/api/users/\${id}\`)
           .then(response => response.json());
       }
 
@@ -199,29 +199,29 @@ export const blogPosts: BlogPost[] = [
       <p>Using semantic HTML is one of the simplest and most effective ways to improve accessibility. Semantic HTML provides meaning to your content, making it easier for assistive technologies to understand and navigate your web applications.</p>
       
       <pre><code>
-      <!-- Not semantic -->
-      <div class="header">
-        <div class="title">Page Title</div>
-      </div>
+      &lt;!-- Not semantic --&gt;
+      &lt;div class="header"&gt;
+        &lt;div class="title"&gt;Page Title&lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Semantic -->
-      <header>
-        <h1>Page Title</h1>
-      </header>
+      &lt;!-- Semantic --&gt;
+      &lt;header&gt;
+        &lt;h1&gt;Page Title&lt;/h1&gt;
+      &lt;/header&gt;
       </code></pre>
       
       <h3>ARIA Attributes</h3>
       <p>Accessible Rich Internet Applications (ARIA) attributes can be used to provide additional information about the structure and behavior of your web applications to assistive technologies.</p>
       
       <pre><code>
-      <button aria-expanded="false" aria-controls="menu-list">
+      &lt;button aria-expanded="false" aria-controls="menu-list"&gt;
         Menu
-      </button>
-      <ul id="menu-list" role="menu" hidden>
-        <li role="menuitem"><a href="/">Home</a></li>
-        <li role="menuitem"><a href="/about">About</a></li>
-        <li role="menuitem"><a href="/contact">Contact</a></li>
-      </ul>
+      &lt;/button&gt;
+      &lt;ul id="menu-list" role="menu" hidden&gt;
+        &lt;li role="menuitem"&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li role="menuitem"&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li role="menuitem"&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
       </code></pre>
       
       <h3>Keyboard Navigation</h3>
