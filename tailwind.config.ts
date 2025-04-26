@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -89,8 +90,36 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: '100%',
+						a: {
+							color: 'hsl(var(--primary))',
+							'&:hover': {
+								color: 'color-mix(in srgb, hsl(var(--primary)) 80%, white)'
+							},
+						},
+						h1: {
+							fontFamily: "'Merriweather', serif",
+						},
+						h2: {
+							fontFamily: "'Merriweather', serif",
+						},
+						h3: {
+							fontFamily: "'Merriweather', serif",
+						},
+						h4: {
+							fontFamily: "'Merriweather', serif",
+						}
+					}
+				}
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require("@tailwindcss/typography")
+	],
 } satisfies Config;
