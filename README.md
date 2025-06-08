@@ -134,7 +134,3 @@ Contributions are welcome! Feel free to:
 - Report bugs
 - Suggest new features
 - Submit pull requests
-
-## 📞 Contact
-
-For questions or feedback about this project, please use the contact form on the website or reach out through the project repository.
