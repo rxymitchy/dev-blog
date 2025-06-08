@@ -1,11 +1,10 @@
-
 # DevBlog - Modern Blog Website
 
 A responsive, modern blog website built with React, TypeScript, and Tailwind CSS. This project demonstrates a fully functional multi-page web application with interactive features and clean design.
 
 ## 🌟 Live Demo
 
-**URL**: https://lovable.dev/projects/1c44b12e-1984-4d2f-8688-2e8d72aee2f4
+**URL**: https://preview--web-wizardry-project-spark.lovable.app/
 
 ## 📋 Project Overview
 
